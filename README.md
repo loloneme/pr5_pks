@@ -1,16 +1,30 @@
-# pr5
+# Практическая работа №5 по Программированию корпоративных систем
 
-ПКС ПР5
+## Мрясова Анастасия Александровна ЭФБО-01-22
 
-## Getting Started
+Эта практическая работа является продолжением предыдущей, с некоторым дополнением - необходимо было создать страницы Избранное и Профиль.
 
-This project is a starting point for a Flutter application.
+Для создания дизайна приложения был использован инструмент Figma. Прототип:
 
-A few resources to get you started if this is your first Flutter project:
+![image](https://github.com/user-attachments/assets/0bcc0110-35ef-4e63-bd79-3419e03fe3b0)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Использование картинок осуществлено с помощью указания URL до них, в верстке - Image.network. 
+Использование шрифта от Google Fonts осуществлено с помощью подключения библиотеки google_fonts.
+В сравнении с предыдущей работой были внесены изменения в модель данных Drink - появилось поле isFavorite, которое сообщает, является ли напиток избранным. Помимо того, вместо использования глобальной переменной drinks из файла data.dart, страницы используют передаваемый им массив drinks. Все изменения, связанные с этим массивом, происходят в виджете HomePage, там же и читается этот массив из файла data.dart. Это обеспечивает масштабируемость проекта и единство данных
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Помимо того, внизу страницы появилось меню Навигации
+
+### Результат.
+
+При запуске приложения пользователь попадает на страницу с напитками
+
+![image](https://github.com/user-attachments/assets/28ab5a80-70d8-42fa-8594-e73df299108c)
+
+Нажав на сердечко, напиток можно убрать из избранных или наоброт добавить их. На странице "Избранное" отображаются только те напитки, у которых isFavorite = true. Также предусмотрено, что при просмотре информации о напитке из страницу "Избранное", напиток нельзя удалить. Это действие доступно только при переходе в карточку напитка со страницы всех напитков.
+
+![image](https://github.com/user-attachments/assets/f8cf3985-9327-4735-89bc-b29f241ba131)
+
+
+
+
+
