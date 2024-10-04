@@ -48,7 +48,7 @@ class FavoritesPage extends StatelessWidget {
             final favoriteDrink = drinks.where((drink) => drink.isFavorite).elementAt(index);
 
             return GestureDetector(
-              onTap: () => _navigateToInfoPage(context, index),
+              onTap: () => _navigateToInfoPage(context, drinks.indexOf(favoriteDrink)),
               child: DrinkItem(drink: favoriteDrink, onFavoriteToggle: () => toggleFavorite(drinks.indexOf(favoriteDrink)),),
             );
           }),
