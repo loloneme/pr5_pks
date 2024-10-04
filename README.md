@@ -26,6 +26,7 @@
 ![image](https://github.com/user-attachments/assets/8c70f799-e99d-4806-8943-91e86b8c40cb)
 
 Профиль пользователя:
+
 ![image](https://github.com/user-attachments/assets/94636f5c-09eb-4c0e-98f0-38f16e474854)
 
 
